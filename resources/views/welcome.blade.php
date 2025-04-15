@@ -7,7 +7,7 @@
 <body>
     <h1>ポケモン head</h1>
     <p>Click on the button below to view a list of ポケモン</p>
-    <a href="" class="btn">
+    <a href="/pokemon" class="btn">
         Find ポケモン
     </a>
 </body>
