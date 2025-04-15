@@ -11,18 +11,18 @@
 
     <ul>
         <li>
-            <a href="">
-                {{ $pokemon[0]["name"]}}
+            <a href="/pokemon/{{$pokemon[0]["id"]}}">
+                {{ $pokemon[0]["name"] }}
             </a>
         </li>
         <li>
-            <a href="">
-                {{ $pokemon[1]["name"]}}
+            <a href="/pokemon/{{$pokemon[1]["id"]}}">
+                {{ $pokemon[1]["name"] }}
             </a>
         </li>
         <li>
-            <a href="">
-                {{ $pokemon[2]["name"]}}
+            <a href="/pokemon/{{$pokemon[2]["id"]}}">
+                {{ $pokemon[2]["name"] }}
             </a>
         </li>
     </ul>

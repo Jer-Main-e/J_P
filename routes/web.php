@@ -35,5 +35,6 @@ Route::get('/pokemon', function () {
 });
 
 Route::get('/pokemon/{id}', function ($id) {
+    // fetch record with id
     return view('pokemon.show', ["id" => $id]);
 });
