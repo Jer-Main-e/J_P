@@ -7,24 +7,19 @@
 <body>
     <h2>Currently Available ポケモン</h2>
 
-    <p>{{ $greeting }}</p>
+    {{-- <p>{{ $greeting }}</p> --}}
+
+    @if($greeting == "hello")
+        <p>Hi from inside the if statement</p>
+    @endif
 
     <ul>
-        <li>
-            <a href="/pokemon/{{$pokemon[0]["id"]}}">
-                {{ $pokemon[0]["name"] }}
-            </a>
-        </li>
-        <li>
-            <a href="/pokemon/{{$pokemon[1]["id"]}}">
-                {{ $pokemon[1]["name"] }}
-            </a>
-        </li>
-        <li>
-            <a href="/pokemon/{{$pokemon[2]["id"]}}">
-                {{ $pokemon[2]["name"] }}
-            </a>
-        </li>
+        @foreach($pokemon as $mon)
+            <li>
+                <p>{{ $mon['name'] }}</p>
+                <a href="/pokemon/{{ $mon['id'] }}">View Details</a>
+            </li>
+        @endforeach
     </ul>
 
 </body>

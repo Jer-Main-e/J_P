@@ -31,7 +31,7 @@ Route::get('/pokemon', function () {
         ]
     ];
 
-    return view('pokemon.index', ["greeting" => "hello", "pokemon" => $pokemon]);
+    return view('pokemon.index', ["greeting" => "hell", "pokemon" => $pokemon]);
 });
 
 Route::get('/pokemon/{id}', function ($id) {
