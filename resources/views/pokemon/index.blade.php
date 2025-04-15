@@ -10,7 +10,21 @@
     <p>{{ $greeting }}</p>
 
     <ul>
-        <li>ポケモン here</li>
+        <li>
+            <a href="">
+                {{ $pokemon[0]["name"]}}
+            </a>
+        </li>
+        <li>
+            <a href="">
+                {{ $pokemon[1]["name"]}}
+            </a>
+        </li>
+        <li>
+            <a href="">
+                {{ $pokemon[2]["name"]}}
+            </a>
+        </li>
     </ul>
 
 </body>
