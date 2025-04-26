@@ -10,8 +10,9 @@
     <ul>
         @foreach($pokemon as $mon)
             <li>
-                <p>{{ $mon['name'] }}</p>
-                <a href="/pokemon/{{ $mon['id'] }}">View Details</a>
+                <x-card href="/pokemon/{{ $mon['id'] }}" :highlight="$mon['level'] > 10">
+                    <h3>{{ $mon['name'] }}</h3>
+                </x-card>
             </li>
         @endforeach
     </ul>
